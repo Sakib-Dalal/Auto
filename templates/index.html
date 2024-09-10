@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Font Links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="contianer">
+        <nav class="navbar bg-success border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid">
+                    <a class="navbar-brand" href="/">
+                        <h1 style="color: rgb(255, 255, 255); font-weight: bold; font-family: Noto Serif Devanagari; font-size: 35px; text-align: center;">
+                        <img src="https://i.pinimg.com/originals/38/16/5f/38165f61e34de24948fe8a0a1bb6b11d.png" alt="Logo" width="80" height="80" class="d-inline-block align-middle" style="margin-left: 10px;">
+                        शिरीन इलेक्ट्रिकल्स</h1>
+                    </a>
+            </div>
+        </nav>
+
+        <!--Collapse button-->
+        <nav class="navbar bg-body-success">
+            <form class="container-fluid justify-content-center">
+                    <a class="btn btn-success" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                    अधिक
+                    </a> 
+            </form>
+        </nav>
+
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <button class="btn btn-sm btn-outline-success" style="margin: 5px;" type="button">संपर्क</button>
+                <button class="btn btn-sm btn-outline-success" style="margin: 5px;" type="button">पत्ता</button>
+                <button class="btn btn-sm btn-outline-success" style="margin: 5px;" type="button">डीलरशिपचा पत्ता</button>
+            </div>
+          </div>
+          
+
+        <!--Card 1-->
+        <div class="card mb-3 border-success" style="margin: 20px; margin-top: 30px; border-width: 3px; border-radius: 25px; padding: 10px; background-color: rgb(243, 255, 243); font-family: Noto Serif Devanagari;">
+            <img src="https://picsum.photos/15/15?grayscale" class="card-img-top" alt="...", style="border-radius: 25px;">
+            <div class="card-body">
+            <h5 class="card-title">ऑटो स्विच 01</h5>
+            <p class="card-text">घरी असताना, कामावर असताना किंवा यामध्‍ये कोठेही असताना—आपल्‍याला आवश्‍यक त्‍या भाषेमध्‍ये, आपल्‍याला त्‍याची आवश्‍यकता असताना संप्रेषण करा.</p>
+            <p class="card-text"><small class="text-body-secondary">Price: /-</small></p>
+            </div>
+        </div>
+
+        <!--Card 2-->
+        <div class="card mb-3 border-success" style="margin: 20px; margin-top: 30px; border-width: 3px; border-radius: 25px; padding: 10px; background-color: rgb(243, 255, 243); font-family: Noto Serif Devanagari;">
+            <img src="https://picsum.photos/15/15?grayscale" class="card-img-top" alt="...", style="border-radius: 25px;">
+            <div class="card-body">
+            <h5 class="card-title">ऑटो स्विच 02</h5>
+            <p class="card-text">घरी असताना, कामावर असताना किंवा यामध्‍ये कोठेही असताना—आपल्‍याला आवश्‍यक त्‍या भाषेमध्‍ये, आपल्‍याला त्‍याची आवश्‍यकता असताना संप्रेषण करा.</p>
+            <p class="card-text"><small class="text-body-secondary">Price: /-</small></p>
+            </div>
+        </div>
+
+
+        <!--Card 3  Sliding Image-->
+        <div class="card mb-3 border-success" style="margin: 20px; margin-top: 30px; border-width: 3px; border-radius: 25px; padding: 10px; background-color: rgb(243, 255, 243); font-family: Noto Serif Devanagari;">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner" style="border-radius: 25px;">
+              <div class="carousel-item active" >
+                <img src="https://picsum.photos/15/15?grayscale" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://picsum.photos/15/15?grayscale" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://picsum.photos/15/15?grayscale" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>          <div class="card-body">
+          <h5 class="card-title">ऑटो स्विच 03</h5>
+          <p class="card-text">घरी असताना, कामावर असताना किंवा यामध्‍ये कोठेही असताना—आपल्‍याला आवश्‍यक त्‍या भाषेमध्‍ये, आपल्‍याला त्‍याची आवश्‍यकता असताना संप्रेषण करा.</p>
+          <p class="card-text"><small class="text-body-secondary">Price: /-</small></p>
+          </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
