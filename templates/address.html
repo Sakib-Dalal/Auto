@@ -10,6 +10,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <!--Map Links-->
+    <link rel="stylesheet" href="
+    https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZy
+    oHS5obTRR9BMY=" crossorigin="" />
+    <script src=
+    "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9V
+        M+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
   </head>
   <body>
 
@@ -37,30 +47,23 @@
 
         <div class="collapse" id="collapseExample">
             <div class="card card-body">
-                <a href="{{ url_for('address') }}" class="btn btn-outline-success" style="margin-bottom: 10px;">पत्ता</a>
+                <a href="{{ url_for('contact') }}" class="btn btn-outline-success" style="margin-bottom: 10px;">पत्ता</a>
                 <a href="{{ url_for('contact') }}" class="btn btn-outline-success" style="margin-bottom: 10px;">डीलरशिपचा पत्ता</a>
             </div>
         </div>
-          
+    </div>
 
-        <!--Contact Body Here-->
+
+        <!--Map Body Here-->
       <div class="card mb-3 border-success" style="margin: 20px; margin-top: 30px; border-width: 3px; border-radius: 25px; padding: 10px; background-color: rgb(243, 255, 243); font-family: Noto Serif Devanagari;">
-          <img src="../static/Call Out Vector Icon.svg" class="card-img-top" alt="...", style="border-radius: 25px; padding-right: 20px; height: 200px;">
-          <div class="card-body" style="text-align: center;">
-            <h5 class="card-title">फोन नंबर</h5>
-            <p class="card-text">+91 9822767584</p>
-          </div>
+        <div class="card-body" style="text-align: center;">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3780.401669934813!2d74.05800508104473!3d18.645963020157815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDM4JzQ1LjUiTiA3NMKwMDMnNDYuNCJF!5e0!3m2!1sen!2sin!4v1726039652230!5m2!1sen!2sin" width="280" height="300" style="border: 0; border-radius: 20px; text-align: center;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="card-body" style="text-align: center;">
+              <h5 class="card-title">पत्ता</h5>
+              <p class="card-text">-------</p>
+        </div>
       </div>
-
-        <!--Email Body Here-->
-      <div class="card mb-3 border-success" style="margin: 20px; margin-top: 30px; border-width: 3px; border-radius: 25px; padding: 10px; background-color: rgb(243, 255, 243); font-family: Noto Serif Devanagari;">
-          <img src="../static/Email icon.svg" class="card-img-top" alt="...", style="border-radius: 25px; height: 150px;">
-          <div class="card-body" style="text-align: center;">
-            <h5 class="card-title">ईमेल</h5>
-            <p class="card-text">shirinelectricalsauto@gmail.com</p>
-          </div>
-      </div>
-
+      
 
     <!--footer-->
     <div class="text-center mb-5 text-success" style="padding-top: 50px;">

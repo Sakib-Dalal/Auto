@@ -50,3 +50,6 @@ Note- पाणी जाउन,विज पडुन,शॉर्ट सर्
 या वरील तीनही सुविधेमुळे संचमध्ये बिघाड झाल्यास तुमची मोटर बंद राहणार नाही.
 *एक वर्ष वाॅरंटीसह,विक्री पश्चात सर्व्हिसची हमी.
 Note- पाणी जाउन,विज पडुन,शॉर्ट सर्कीट होउन जळाल्यास नो वॉरंटी.
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3780.401669934813!2d74.05800508104473!3d18.645963020157815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDM4JzQ1LjUiTiA3NMKwMDMnNDYuNCJF!5e0!3m2!1sen!2sin!4v1726039652230!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
