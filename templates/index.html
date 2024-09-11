@@ -18,16 +18,17 @@
             <div class="container-fluid">
                     <a class="navbar-brand" href="/">
                         <h1 style="color: rgb(255, 255, 255); font-weight: bold; font-family: Noto Serif Devanagari; font-size: 35px; text-align: center;">
-                        <img src="https://i.pinimg.com/originals/38/16/5f/38165f61e34de24948fe8a0a1bb6b11d.png" alt="Logo" width="80" height="80" class="d-inline-block align-middle" style="margin-left: 10px;">
+                        <img src="../static/logo.jpeg" alt="Logo" width="80" height="80" class="d-inline-block align-middle" style="margin-left: 10px; border-radius: 50%;">
                         शिरीन इलेक्ट्रिकल्स</h1>
                     </a>
             </div>
         </nav>
 
+
         <!--Collapse button-->
-        <nav class="navbar bg-body-success">
+        <nav class="navbar bg-body-success" style="margin-left: 10px; margin-right: 10px;">
             <form class="container-fluid justify-content-center">
-                    <a class="btn btn-success" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                    <a class="btn btn-outline-success" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
                     अधिक
                     </a> 
             </form>
@@ -35,30 +36,66 @@
 
         <div class="collapse" id="collapseExample">
             <div class="card card-body">
-                <button class="btn btn-sm btn-outline-success" style="margin: 5px;" type="button">संपर्क</button>
-                <button class="btn btn-sm btn-outline-success" style="margin: 5px;" type="button">पत्ता</button>
-                <button class="btn btn-sm btn-outline-success" style="margin: 5px;" type="button">डीलरशिपचा पत्ता</button>
+              <a href="{{ url_for('contact') }}" class="btn btn-outline-success" style="margin-bottom: 10px;">संपर्क</a>
+              <a href="{{ url_for('contact') }}" class="btn btn-outline-success" style="margin-bottom: 10px;">पत्ता</a>
+              <a href="{{ url_for('contact') }}" class="btn btn-outline-success" style="margin-bottom: 10px;">डीलरशिपचा पत्ता</a>
             </div>
-          </div>
+        </div>
           
+
+
+
+          <!--Auto sliding image-->
+
+        <div class="card mb-3 border-success" style="margin: 20px; margin-top: 30px; border-width: 3px; border-radius: 25px; padding: 10px; background-color: rgb(243, 255, 243); font-family: Noto Serif Devanagari;">
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" style="border-radius: 20px;">
+                <div class="carousel-item active" data-bs-interval="2000">
+                  <img src="../static/Resized Images/Image Resizer all auto.jpeg" class="d-block w-100" alt="..." style="height: 400px;">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="../static/Resized Images/Dol dry auto.jpeg" class="d-block w-100" alt="..." style="height: 400px;">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="../static/Resized Images/SD_dry_auto.jpeg" class="d-block w-100" alt="..." style="height: 400px;">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="../static/Resized Images/without_dry_auto.jpeg" class="d-block w-100" alt="..." style="height: 400px;">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="../static/Resized Images/modile_auto.jpeg" class="d-block w-100" alt="..." style="height: 400px;">
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev" >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
 
         <!--Card 1-->
         <div class="card mb-3 border-success" style="margin: 20px; margin-top: 30px; border-width: 3px; border-radius: 25px; padding: 10px; background-color: rgb(243, 255, 243); font-family: Noto Serif Devanagari;">
-            <img src="https://picsum.photos/15/15?grayscale" class="card-img-top" alt="...", style="border-radius: 25px;">
+            <img src="../static/Dol_dry_auto.jpeg" class="card-img-top" alt="...", style="border-radius: 25px;">
             <div class="card-body">
-            <h5 class="card-title">ऑटो स्विच 01</h5>
-            <p class="card-text">घरी असताना, कामावर असताना किंवा यामध्‍ये कोठेही असताना—आपल्‍याला आवश्‍यक त्‍या भाषेमध्‍ये, आपल्‍याला त्‍याची आवश्‍यकता असताना संप्रेषण करा.</p>
-            <p class="card-text"><small class="text-body-secondary">Price: /-</small></p>
+              <h5 class="card-title">ऑटो स्विच 01</h5>
+              <p class="card-text">घरी असताना, कामावर असताना किंवा यामध्‍ये कोठेही असताना—आपल्‍याला आवश्‍यक त्‍या भाषेमध्‍ये, आपल्‍याला त्‍याची आवश्‍यकता असताना संप्रेषण करा.</p>
+              <p class="card-text"><small class="text-body-secondary">Price: /-</small></p>
             </div>
         </div>
 
         <!--Card 2-->
         <div class="card mb-3 border-success" style="margin: 20px; margin-top: 30px; border-width: 3px; border-radius: 25px; padding: 10px; background-color: rgb(243, 255, 243); font-family: Noto Serif Devanagari;">
-            <img src="https://picsum.photos/15/15?grayscale" class="card-img-top" alt="...", style="border-radius: 25px;">
+            <img src="../static/modile_auto.jpeg" class="card-img-top" alt="...", style="border-radius: 25px;">
             <div class="card-body">
-            <h5 class="card-title">ऑटो स्विच 02</h5>
-            <p class="card-text">घरी असताना, कामावर असताना किंवा यामध्‍ये कोठेही असताना—आपल्‍याला आवश्‍यक त्‍या भाषेमध्‍ये, आपल्‍याला त्‍याची आवश्‍यकता असताना संप्रेषण करा.</p>
-            <p class="card-text"><small class="text-body-secondary">Price: /-</small></p>
+              <h5 class="card-title">ऑटो स्विच 02</h5>
+              <p class="card-text">घरी असताना, कामावर असताना किंवा यामध्‍ये कोठेही असताना—आपल्‍याला आवश्‍यक त्‍या भाषेमध्‍ये, आपल्‍याला त्‍याची आवश्‍यकता असताना संप्रेषण करा.</p>
+              <p class="card-text"><small class="text-body-secondary">Price: /-</small></p>
             </div>
         </div>
 
