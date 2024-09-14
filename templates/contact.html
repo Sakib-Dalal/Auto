@@ -27,37 +27,40 @@
 
         <!--Collapse button-->
         <nav class="navbar bg-body-success" style="margin-left: 10px; margin-right: 10px;">
-            <form class="container-fluid justify-content-center">
-                    <a class="btn btn-outline-success" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
-                    अधिक
-                    </a> 
-            </form>
+          <form class="container-fluid justify-content-center">
+                  <a class="btn btn-success" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="width: 100%; font-size: 18px; font-weight: bolder;">
+                  अधिक
+                  </a> 
+          </form>
         </nav>
         
 
         <div class="collapse" id="collapseExample">
             <div class="card card-body">
                 <a href="{{ url_for('address') }}" class="btn btn-outline-success" style="margin-bottom: 10px;">पत्ता</a>
-                <a href="{{ url_for('contact') }}" class="btn btn-outline-success" style="margin-bottom: 10px;">डीलरशिपचा पत्ता</a>
             </div>
         </div>
           
 
         <!--Contact Body Here-->
       <div class="card mb-3 border-success" style="margin: 20px; margin-top: 30px; border-width: 3px; border-radius: 25px; padding: 10px; background-color: rgb(243, 255, 243); font-family: Noto Serif Devanagari;">
-          <img src="../static/Call Out Vector Icon.svg" class="card-img-top" alt="...", style="border-radius: 25px; padding-right: 20px; height: 200px;">
+          <img src="../static/Call Out Vector Icon.svg" class="card-img-top" alt="call", style="border-radius: 25px; padding-right: 20px; height: 100px;">
           <div class="card-body" style="text-align: center;">
-            <h5 class="card-title">फोन नंबर</h5>
-            <p class="card-text">+91 9822767584</p>
+            <h1 class="card-title">फोन नंबर</h1>
+            <hr>
+            <h2 class="card-text">+91 9822767584</h2>
+            <hr>
+            <h2 class="card-text">+91 0९८२२७६७५८४</h2>
           </div>
       </div>
 
         <!--Email Body Here-->
       <div class="card mb-3 border-success" style="margin: 20px; margin-top: 30px; border-width: 3px; border-radius: 25px; padding: 10px; background-color: rgb(243, 255, 243); font-family: Noto Serif Devanagari;">
-          <img src="../static/Email icon.svg" class="card-img-top" alt="...", style="border-radius: 25px; height: 150px;">
+          <img src="../static/Email icon.svg" class="card-img-top" alt="...", style="border-radius: 25px; height: 75px;">
           <div class="card-body" style="text-align: center;">
-            <h5 class="card-title">ईमेल</h5>
-            <p class="card-text">shirinelectricalsauto@gmail.com</p>
+            <h1 class="card-title">ईमेल</h1>
+            <hr>
+            <h3 class="card-text">shirinelectricalsauto@gmail.com</h3>
           </div>
       </div>
 
